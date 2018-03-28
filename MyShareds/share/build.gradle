@@ -11,8 +11,6 @@ buildscript {
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.example'
-
 android {
     compileSdkVersion 27
 
