@@ -4,21 +4,17 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.github.dcendents:android-maven-plugin:1.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0' // Add this line
     }
 }
 
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group = theGroup
-version = theVersion
-sourceCompatibility = theSourceCompatibility
+group='com.example'
 
 android {
     compileSdkVersion 27
-
-
 
     defaultConfig {
         minSdkVersion 21
@@ -46,9 +42,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-}
-
-allprojects {
-    group = 'com.example'
-    version = '1.0.0-SNAPSHOT'
 }
